@@ -5,14 +5,21 @@ import { useState, useEffect } from 'react'
 import Dropdown from './components/Dropdown';
 import Sidebar from './components/Sidebar';
 
-
 function App() {
-  const [dropdownVisible, setDropdownVisible] = useState(false)
-  const [sidebarVisible, setSidebarVisisble] = useState(false)
+  const [ dropdownVisible, setDropdownVisible ] = useState(false)
+  const [ sidebarVisible, setSidebarVisible ] = useState(false)
 
   const toggle = () => {
     setDropdownVisible(!dropdownVisible)
     console.log('Dropdown set to:', dropdownVisible)
+  }
+
+  const toggleSidebar = () => {
+    if (window.scrollY > 384) {
+      setSidebarVisible(true)
+    } else {
+      setSidebarVisible(false)
+    }
   }
 
   useEffect(() => {
@@ -30,12 +37,19 @@ function App() {
     }
   }, [dropdownVisible])
 
+  useEffect(() => {
+    window.addEventListener('scroll', toggleSidebar)
+
+    return () => window.removeEventListener('scroll', toggleSidebar)
+  }, [])
+
+
   return (
     <div>
       <Navbar toggle={toggle}/>
       <Dropdown toggle={toggle} dropdownVisible={dropdownVisible}/>
       <Banner />
-      <Sidebar />
+      <Sidebar sidebarVisible={sidebarVisible}/>
       <div class='h-screen'>
 
       </div>

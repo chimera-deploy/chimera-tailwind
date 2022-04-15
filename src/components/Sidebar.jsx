@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Sidebar = () => {
+const Sidebar = ({ sidebarVisible }) => {
   return (
-    <div class='fixed top-24 left-0' hidden>
-      <ul class='font-sans text-black text-xl px-4 space-y-2'>
+    <div class={sidebarVisible ? 'fixed top-24 left-0' : 'hidden'}>
+      <ul class='font-san text-tyrianpurple text-xl px-4 space-y-2'>
         <li><Link to='/#deployments' className='hover:text-2xl hover:font-bold'>Deployments</Link></li>
         <li><Link to='/#canary' className='hover:text-2xl hover:font-bold'>Canary Deployments</Link></li>
         <li><Link to='/#solutions' className='hover:text-2xl hover:font-bold'>Current Solutions</Link></li>        
