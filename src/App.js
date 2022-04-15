@@ -1,10 +1,12 @@
 import './App.css';
-import Banner from './components/Banner';
+import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
-import { useState, useEffect } from 'react'
 import Dropdown from './components/Dropdown';
-import Sidebar from './components/Sidebar';
-import Content from './components/Content';
+import CaseStudy from './pages/caseStudy';
+import Home from './pages/home';
+
 
 function App() {
   const [ dropdownVisible, setDropdownVisible ] = useState(false);
@@ -45,9 +47,11 @@ function App() {
     <div>
       <Navbar toggle={toggle}/>
       <Dropdown toggle={toggle} dropdownVisible={dropdownVisible}/>
-      <Banner />
-      <Sidebar sidebarVisible={sidebarVisible}/>
-      <Content />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/casestudy' element={<CaseStudy sidebarVisible={sidebarVisible}/>} />
+      </Routes>
+      <footer className='h-40'></footer>
     </div>
   );
 }
