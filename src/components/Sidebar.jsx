@@ -4,7 +4,7 @@ const Sidebar = ({ sidebarVisible }) => {
 
   return (
     <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
-      <ul className='font-koulen text-tyrianpurple text-xl px-4 space-y-2' >
+      <ul className='font-koulen text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
         <li><a href='#Deployments%20In%20Modern%20Systems' className='hover:text-2xl hover:text-bold'>Deployments</a></li>
         <li><a href='#Components%20of%20a%20Canary%20Deployment' className='hover:text-2xl hover:text-bold '>Canary Deployments</a></li>
         <li><a href='#Current%20Solutions' className='hover:text-2xl hover:text-bold '>Current Solutions</a></li>        

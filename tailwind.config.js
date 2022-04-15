@@ -3,7 +3,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        fade: 'fadeIn 1s ease-in',
+      },
+      keyframes: theme => ({
+        fadeIn: {
+          '0%': { color: theme('colors.transparent') },
+          '100%': { color: theme('colors.tyrianpurple.500') },
+        },
+      }),
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
