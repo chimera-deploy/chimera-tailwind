@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = ({ sidebarVisible }) => {
   return (
-    <div class={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
-      <ul class='font-san text-tyrianpurple text-xl px-4 space-y-2'>
+    <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
+      <ul className='font-san text-tyrianpurple text-xl px-4 space-y-2'>
         <li><Link to='/#deployments' className='hover:text-2xl hover:font-bold'>Deployments</Link></li>
         <li><Link to='/#canary' className='hover:text-2xl hover:font-bold'>Canary Deployments</Link></li>
         <li><Link to='/#solutions' className='hover:text-2xl hover:font-bold'>Current Solutions</Link></li>        
