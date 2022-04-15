@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Banner from './components/Banner';
+import Navbar from './components/Navbar';
+import { useState, useEffect } from 'react'
+import Dropdown from './components/Dropdown';
+import Sidebar from './components/Sidebar';
+
 
 function App() {
+  const [dropdownVisible, setDropdownVisible] = useState(false)
+  const [sidebarVisible, setSidebarVisisble] = useState(false)
+
+  const toggle = () => {
+    setDropdownVisible(!dropdownVisible)
+    console.log('Dropdown set to:', dropdownVisible)
+  }
+
+  useEffect(() => {
+    const hideMenu = () => {
+      if (window.innerWidth > 768 && dropdownVisible === true) {
+        setDropdownVisible(false)
+        console.log('resized dropdown')
+      }
+    }
+
+    window.addEventListener('resize', hideMenu)
+
+    return () => {
+      window.removeEventListener('resize', hideMenu)
+    }
+  }, [dropdownVisible])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar toggle={toggle}/>
+      <Dropdown toggle={toggle} dropdownVisible={dropdownVisible}/>
+      <Banner />
+      <Sidebar />
+      <div class='h-screen'>
+
+      </div>
+
     </div>
   );
 }
