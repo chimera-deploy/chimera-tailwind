@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Dropdown from './components/Dropdown';
 import CaseStudy from './pages/caseStudy';
 import Home from './pages/home';
+import Team from './pages/team';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/casestudy' element={<CaseStudy sidebarVisible={sidebarVisible}/>} />
+        <Route path='/team' element={<Team />} />
       </Routes>
       <footer className='h-40'></footer>
     </div>
