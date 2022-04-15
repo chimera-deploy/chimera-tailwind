@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import colorLogo from '../images/Chimera_graphic_color.svg'
+import octoCat from '../images/Octocat/Octocat.png'
 
 const Navbar = ({toggle}) => {
   return (
@@ -10,10 +11,11 @@ const Navbar = ({toggle}) => {
             <img src={colorLogo} alt="color chimera" className='h-full'/>
           </div>
         </Link>
-      <nav className="grow h-20 md:flex hidden place-items-center px-8 font-koulen text-3xl text-tyrianpurple">
+      <nav className="grow h-20 md:flex justify-end hidden place-items-center px-8 font-koulen text-3xl text-tyrianpurple">
         <Link to="/" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap ">Home</Link>
         <Link to="/casestudy" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Case Study</Link>
         <Link to="/team" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Our Team</Link>
+        <a href="https://github.com/chimera-deploy/Chimera" className="h-20"><img src={octoCat} className="h-20"></img></a>
       </nav>
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg className="w-6 h-6" fill="none" 
