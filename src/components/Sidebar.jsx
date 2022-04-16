@@ -7,7 +7,7 @@ const Sidebar = ({ sidebarVisible }) => {
       <ul className='font-koulen text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
         <li><a href='#Deployments%20In%20Modern%20Systems' className='hover:text-2xl hover:text-bold'>Deployments</a></li>
         <li><a href='#Components%20of%20a%20Canary%20Deployment' className='hover:text-2xl hover:text-bold '>Canary Deployments</a></li>
-        <li><a href='#Current%20Solutions' className='hover:text-2xl hover:text-bold '>Current Solutions</a></li>        
+        <li><a href='#Current%20Solutions' className='hover:text-2xl hover:text-bold'>Current Solutions</a></li>        
         <li><a href='#Central%20Features%20of%20Chimera' className='hover:text-2xl hover:text-bold '>Central Features</a></li>
         <li><a href="#Using%20Chimera:%20The%20Dev's%20Perspective" className='hover:text-2xl hover:text-bold '>Using Chimera</a></li>
         <li><a href="#Technical%20Challenges%20&%20Design%20Decisions" className='hover:text-2xl hover:text-bold '>Design Decisions</a></li>
