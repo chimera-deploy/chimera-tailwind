@@ -34,6 +34,8 @@ const Content = () => {
     const observer = new IntersectionObserver(callback)
     const sections = document.querySelectorAll("div[id]") 
     sections.forEach(section => observer.observe(section))
+
+    return () => observer.disconnect()
   }, [])
 
   const sectionHeaders = Object.keys(caseStudy)
