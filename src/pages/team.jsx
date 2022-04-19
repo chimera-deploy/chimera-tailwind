@@ -32,7 +32,7 @@ const Member = ({ photo, github, name, location, email, website, linkedin }) => 
 const Team = () => {
   return (
     <div>
-      <Banner />
+      <Banner title='The Team' subtitle='Crushing Canary Deployments Since 2022'/>
       <div className='flex flex-row flex-wrap justify-center font-koulen text-center'>
         <Member photo={willPhoto} github='https://github.com/wor101' name='Will Rossen' location='Boston, MA' email='wor101@gmail.com' website='https://www.willrossen.com' linkedin='https://www.linkedin.com/in/william-rossen-1ab5a320'/>
         <Member photo={trevorPhoto} github='https://github.com/TrevorDKelly' name='Trevor Kelly' location='Pittsburgh, PA' email='trevor.daniel.kelly@gmail.com' website='' linkedin='https://linkedin.com/in/trevor-kelly-2a036770/'/>

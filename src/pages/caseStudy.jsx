@@ -6,7 +6,7 @@ import Content from '../components/Content'
 const CaseStudy = ({ sidebarVisible }) => {
   return (
     <>
-      <Banner />
+      <Banner title='Chimera' subtitle='An automated canary deployment tool for containerized microservices' />
       <Sidebar sidebarVisible={sidebarVisible}/>
       <Content />
     </>
