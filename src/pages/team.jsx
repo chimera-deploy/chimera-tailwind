@@ -9,8 +9,8 @@ import trevorPhoto from '../images/headshots/trevor-kelly.jpg'
 const Member = ({ photo, github, name, location, email, website, linkedin }) => {
   return (
     <div className='basis-1/4 p-5'>
-      <a href={github} target="_blank">
-        <img src={photo} alt={name} className='rounded-full'></img>
+      <a href={github} target="_blank" className="">
+        <img src={photo} alt={name} className='rounded-full max-h-48 m-auto'></img>
       </a>
       <h3 className='text-3xl text-tyrianpurple'>{name}</h3>
       <h4 className='text-2xl text-flame'>{location}</h4>
