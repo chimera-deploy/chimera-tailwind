@@ -53,7 +53,6 @@ function App() {
         <Route path='/casestudy' element={<CaseStudy sidebarVisible={sidebarVisible}/>} />
         <Route path='/team' element={<Team />} />
       </Routes>
-      <footer className='h-40'></footer>
     </div>
   );
 }
