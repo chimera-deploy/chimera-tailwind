@@ -17,7 +17,7 @@ const Navbar = ({toggle}) => {
         <Link to="/" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap ">Home</Link>
         <Link to="/casestudy" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Case Study</Link>
         <Link to="/team" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Our Team</Link>
-        <a href="https://github.com/chimera-deploy/Chimera" className="flex flex-col place-content-center h-20"><img src={tyrianKitty} alt="github kitty" className="h-12 hover:h-14"></img></a>
+        <a href="https://github.com/chimera-deploy/Chimera" target="_blank" className="flex flex-col place-content-center h-20"><img src={tyrianKitty} alt="github kitty" className="h-12 hover:h-14"></img></a>
       </nav>
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg className="w-6 h-6" fill="none" 

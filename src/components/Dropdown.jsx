@@ -9,7 +9,7 @@ const Dropdown = ({toggle, dropdownVisible}) => {
       <Link to="/" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Home</Link>
       <Link to="/casestudy" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Case Study</Link>
       <Link to="/team" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Our Team</Link>
-      <a href="https://github.com/chimera-deploy/Chimera" className="h-20" onClick={toggle}><img src={tyrianKitty} alt="github kitty" className="h-12 hover:h-14"></img></a>
+      <a href="https://github.com/chimera-deploy/Chimera" target="_blank" className="h-20" onClick={toggle}><img src={tyrianKitty} alt="github kitty" className="h-12 hover:h-14"></img></a>
     </nav>
   )
 }
