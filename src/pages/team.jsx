@@ -1,6 +1,5 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import teamPhoto from '../images/team-photo.png'
 import willPhoto from '../images/headshots/will-rossen.jpg'
 import wesPhoto from '../images/headshots/wes-anderson.png'
 import joshPhoto from '../images/headshots/josh-leath.jpg'

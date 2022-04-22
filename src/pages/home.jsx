@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Banner from '../components/Banner'
-import ChimeraLogo from '../images/color-logo.png'
 import chimeraLogoTitle from '../images/color-logo-title.png'
-import deployGif from '../images/start-deploy-v2-1-widescreen.gif'
 
 const Home = () => {
   return (
