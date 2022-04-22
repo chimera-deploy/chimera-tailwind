@@ -1,22 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.45f564d3.css",
-    "main.js": "/static/js/main.f1b7d3d3.js",
-    "static/media/team-photo.png": "/static/media/team-photo.517d29c8dc2d2af99b4b.png",
-    "static/media/start-deploy-v2-1-widescreen.gif": "/static/media/start-deploy-v2-1-widescreen.c2df88ea641ec7bf10a0.gif",
+    "main.css": "/static/css/main.43f83670.css",
+    "main.js": "/static/js/main.872a12da.js",
     "static/media/wes-anderson.png": "/static/media/wes-anderson.51b580ae8f8219bf87b1.png",
-    "static/media/color-logo.png": "/static/media/color-logo.8444ee993160bdc505d7.png",
     "static/media/color-logo-title.png": "/static/media/color-logo-title.0fb9079fdc1c5c5fcdd4.png",
     "static/media/Chimera_graphic_color.svg": "/static/media/Chimera_graphic_color.5aae67da25b46b6b069312b7f5d0ed4e.svg",
     "static/media/will-rossen.jpg": "/static/media/will-rossen.049b13d38cbea41b4299.jpg",
     "static/media/josh-leath.jpg": "/static/media/josh-leath.bf03c7fc2520006124ae.jpg",
     "static/media/trevor-kelly.jpg": "/static/media/trevor-kelly.91980139e4e554b1f034.jpg",
     "index.html": "/index.html",
-    "main.45f564d3.css.map": "/static/css/main.45f564d3.css.map",
-    "main.f1b7d3d3.js.map": "/static/js/main.f1b7d3d3.js.map"
+    "main.43f83670.css.map": "/static/css/main.43f83670.css.map",
+    "main.872a12da.js.map": "/static/js/main.872a12da.js.map"
   },
   "entrypoints": [
-    "static/css/main.45f564d3.css",
-    "static/js/main.f1b7d3d3.js"
+    "static/css/main.43f83670.css",
+    "static/js/main.872a12da.js"
   ]
 }
