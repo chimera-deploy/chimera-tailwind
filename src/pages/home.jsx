@@ -5,7 +5,7 @@ import chimeraLogoTitle from '../images/color-logo-title.png'
 const Home = () => {
   return (
     <>
-      <div className="flexf flex-col flex-start py-12 bg-greensheen" >
+      <div className="flexf flex-col flex-start md:py-12 py-20 bg-greensheen" >
         <img src={chimeraLogoTitle} alt='banner image' className="mx-auto h-[500px]"></img>
       </div>
       <div className="flex flex-col bg-flame h-full py-24 space-y-12">
