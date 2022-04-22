@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import colorLogo from '../images/Chimera_graphic_color.svg'
-import tyrianKitty from '../images/github-tyrianpurple-kitty.png'
 
 const Navbar = ({toggle}) => {
   return (
-    <div className="flex justify-between place-items-center">
-        <Link to="/" className="flex-none">
+    <div className="fixed top-0 left-0 right-0 z-30 md:static flex justify-between place-items-center">
+        <Link to="/" className="md:visible invisible flex-none ">
           <div className="h-20">
             <img src={colorLogo} alt="color chimera" className='h-full'/>
           </div>
