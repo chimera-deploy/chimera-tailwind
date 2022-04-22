@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1220172b.css",
-    "main.js": "/static/js/main.a3651192.js",
+    "main.css": "/static/css/main.2edb440a.css",
+    "main.js": "/static/js/main.8370796a.js",
     "static/media/wes-anderson.png": "/static/media/wes-anderson.51b580ae8f8219bf87b1.png",
     "static/media/color-logo-title.png": "/static/media/color-logo-title.0fb9079fdc1c5c5fcdd4.png",
     "static/media/Chimera_graphic_color.svg": "/static/media/Chimera_graphic_color.5aae67da25b46b6b069312b7f5d0ed4e.svg",
@@ -9,11 +9,11 @@
     "static/media/josh-leath.jpg": "/static/media/josh-leath.bf03c7fc2520006124ae.jpg",
     "static/media/trevor-kelly.jpg": "/static/media/trevor-kelly.91980139e4e554b1f034.jpg",
     "index.html": "/index.html",
-    "main.1220172b.css.map": "/static/css/main.1220172b.css.map",
-    "main.a3651192.js.map": "/static/js/main.a3651192.js.map"
+    "main.2edb440a.css.map": "/static/css/main.2edb440a.css.map",
+    "main.8370796a.js.map": "/static/js/main.8370796a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1220172b.css",
-    "static/js/main.a3651192.js"
+    "static/css/main.2edb440a.css",
+    "static/js/main.8370796a.js"
   ]
 }
