@@ -4,13 +4,13 @@ import colorLogo from '../images/Chimera_graphic_color.svg'
 
 const Navbar = ({toggle}) => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-30 md:static flex justify-between place-items-center">
-        <Link to="/" className="md:visible invisible flex-none ">
+    <div className="fixed top-0 left-0 right-0 z-30 bg-white md:static flex justify-between place-items-center">
+        <Link to="/" className="flex-none ">
           <div className="h-20">
             <img src={colorLogo} alt="color chimera" className='h-full'/>
           </div>
         </Link>
-      <nav className="grow h-20 md:flex justify-end hidden place-items-center px-8 font-koulen text-3xl text-tyrianpurple">
+      <nav className="grow h-20 md:flex hidden justify-end place-items-center px-8 font-koulen text-3xl text-tyrianpurple">
         <Link to="/" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap ">Home</Link>
         <Link to="/casestudy" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Case Study</Link>
         <Link to="/team" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Our Team</Link>
