@@ -5,7 +5,7 @@ import tyrianKitty from '../images/github-tyrianpurple-kitty.png'
 
 const Dropdown = ({toggle, dropdownVisible}) => {
   return (
-    <nav className={dropdownVisible ? "fixed top-0 left-0 right-0 z-20 flex flex-col items-center bg-white font-koulen text-3xl text-tyrianpurple" : "hidden"}>
+    <nav className={dropdownVisible ? "fixed top-0 left-0 right-0 z-20 flex flex-col items-center bg-white font-koulen text-3xl text-tyrianpurple shadow-2xl" : "hidden"}>
       <Link to="/" className="p-4 mt-20 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Home</Link>
       <Link to="/casestudy" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Case Study</Link>
       <Link to="/team" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Our Team</Link>
