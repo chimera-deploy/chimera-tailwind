@@ -19,7 +19,7 @@ function App() {
   }
 
   const toggleSidebar = () => {
-    if (window.scrollY > 384) {
+    if (window.scrollY > 900) {     //384
       setSidebarVisible(true);
     } else {
       setSidebarVisible(false);

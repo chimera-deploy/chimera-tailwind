@@ -13,6 +13,9 @@ module.exports = {
           '100%': { color: theme('colors.tyrianpurple.500') },
         },
       }),
+      spacing: {
+        '128': '32rem',
+      }
     },
     colors: {
       transparent: 'transparent',

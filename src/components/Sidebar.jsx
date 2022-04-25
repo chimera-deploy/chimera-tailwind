@@ -1,21 +1,22 @@
 import React from 'react'
 
 const Sidebar = ({ sidebarVisible }) => {
+  const linkFormat = 'hover:text-2xl hover:text-bold hover:text-greensheen'
 
   return (
     <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
       <ul className='font-koulen text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
         <li><a href='#introduction' className='hover:text-2xl hover:text-bold'>Introduction</a></li>
-        <li><a href='#containerizedMicroservices' className='hover:text-2xl hover:text-bold '>Containerized Microservices</a></li>
-        <li><a href='#deployingMicroservices' className='hover:text-2xl hover:text-bold'>Deploying Microservices</a></li>
-        <li><a href='#existingSolutions' className='hover:text-2xl hover:text-bold '>Existing Solutions</a></li>
-        <li><a href="#introducingChimera" className='hover:text-2xl hover:text-bold '>Introducing Chimera</a></li>
-        <li><a href="#chimerasArchitecture" className='hover:text-2xl hover:text-bold '>Chimera's Architecture</a></li>
-        <li><a href='#usingChimera' className='hover:text-2xl hover:text-bold '>Using Chimera</a></li>
-        <li><a href='#technicalChallenges' className='hover:text-2xl hover:text-bold '>Technical Challenges</a></li>
-        <li><a href='#futureWork' className='hover:text-2xl hover:text-bold '>Future Work</a></li>
-        <li><a href='#references' className='hover:text-2xl hover:text-bold '>References</a></li>
-        <li><a href='#ourTeam' className='hover:text-2xl hover:text-bold '>Our Team</a></li>
+        <li><a href='#containerizedMicroservices' className={linkFormat}>Microservices</a></li>
+        <li><a href='#deployingMicroservices' className={linkFormat}>Deploying Microservices</a></li>
+        <li><a href='#existingSolutions' className={linkFormat}>Existing Solutions</a></li>
+        <li><a href="#introducingChimera" className={linkFormat}>Introducing Chimera</a></li>
+        <li><a href="#chimerasArchitecture" className={linkFormat}>Chimera's Architecture</a></li>
+        <li><a href='#usingChimera' className={linkFormat}>Using Chimera</a></li>
+        <li><a href='#technicalChallenges' className={linkFormat}>Technical Challenges</a></li>
+        <li><a href='#futureWork' className={linkFormat}>Future Work</a></li>
+        <li><a href='#references' className={linkFormat}>References</a></li>
+        <li><a href='#ourTeam' className={linkFormat}>Our Team</a></li>
       </ul>
     </div>
   )
