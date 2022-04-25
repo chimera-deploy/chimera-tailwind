@@ -6,7 +6,7 @@ const Sidebar = ({ sidebarVisible }) => {
 
   return (
     <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
-      <ul className='font-koulen text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
+      <ul className='font-koulen text-right text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
         <li><a href='#introduction' className={linkFormat}>Introduction</a></li>
         <li><a href='#containerizedMicroservices' className={linkFormat}>Microservices</a></li>
         <li><a href='#deployingMicroservices' className={linkFormat}>Deploying Microservices</a></li>
