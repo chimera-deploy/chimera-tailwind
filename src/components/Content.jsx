@@ -81,13 +81,13 @@ const Content = () => {
 
   return (
     <>
-      <div className={sectionDiv}>
+      <div id="introduction" className={sectionDiv}>
         <h2 className={mainHeader}>Introduction</h2>
         <div className={textDiv}>
           <p>Chimera is an open-source tool for performing automated <b>canary deployments</b> of <b>containerized microservices</b>. It allows software development teams to safely and easily deploy new versions of their microservices by taking advantage of the features provided by their existing service mesh.</p>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="containerizedMicroservices" className={sectionDiv}>
         <h2 className={mainHeader}>Containerized Microservices</h2>
         <div className={textDiv}>
           <p>Traditionally, software systems were designed using a monolithic architecture. In this architecture, each piece of the system is a part of one large code base which is deployed as a single program. </p>
@@ -119,7 +119,7 @@ const Content = () => {
           </figure>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="deployingMicroservices" className={sectionDiv}>
         <h2 className={mainHeader}>Deploying Microservices</h2>
         <div className={textDiv}>
           <p>Designing and writing code is only a part of the process of creating a new version of an application and providing new or improved features for your users. A very important part of the process is delivering the new version and making it available. This is why a robust Continuous Integration and Continuous Delivery (CI/CD) pipeline is essential. When a CI/CD pipeline is performing correctly, teams can iterate incrementally and rapidly. Modern software teams commonly deploy new versions of their code several times a day. In order to achieve this, the steps of the deployment process must be automated, reliable, and have minimal impact on the application’s users.</p>
@@ -168,7 +168,7 @@ const Content = () => {
           <p>These features come at the cost of increased complexity, as canary deployments require many more moving parts than other deployment strategies. Most of the added complexity requires real-time manual intervention, such as determining whether more traffic can be shifted. Canary deployments also require an extended length of time compared to other strategies, sometimes spreading the traffic shifting over several hours. </p>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="existingSolutions" className={sectionDiv}>
         <h2 className={mainHeader}>Existing Solutions</h2>
         <div className={textDiv}>
           <p>Because canary deployments are complex and require an extended timeframe to complete, the process can greatly benefit from automation. This is especially true if the canary deployment is part of a CI/CD process that is intended to deploy as frequently as possible. There are several distinct categories of existing solutions for automating canary deployments of containerized microservices.</p>
@@ -189,7 +189,7 @@ const Content = () => {
           <p>CD-as-a-Service platforms are typically not open source. Compared to open-source solutions, it may be less clear how they work or why they would continue rolling the canary forward or roll it back. This is because their internal infrastructure is inaccessible to the user, and they sometimes use unsupervised machine learning tools that lack transparency by design.</p>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="introducingChimera" className={sectionDiv}>
         <h2 className={mainHeader}>Introducing Chimera</h2>
         <div className={textDiv}>
           <p>In the landscape of existing automated canary deployment tools, what is missing is an easy-to-use, open source tool for those outside of the Kubernetes ecosystem.</p>
@@ -201,7 +201,7 @@ const Content = () => {
           <p>Chimera achieves this by trading off flexibility for ease-of-use. While it can be used by those outside of the Kubernetes ecosystem, there are limits to the infrastructure that Chimera can support. Currently, Chimera can support automated canary deployments for microservices orchestrated by AWS Elastic Container Service using AWS App Mesh to facilitate interservice communication.</p>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="chimerasArchitecture" className={sectionDiv}>
         <h2 className={mainHeader}>Chimera's Architecture</h2>
         <div className={textDiv}>
           <p>To begin the exploration into how Chimera delivers on these design goals and performs canary deployments, we must consider the various infrastructure components that make the canary deployment possible.</p>
@@ -267,7 +267,7 @@ const Content = () => {
           </figure>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="usingChimera" className={sectionDiv}>
         <h2 className={mainHeader}>Using Chimera</h2>
         <div className={textDiv}>
           <p><a className={bodyLink} href="/README">INCLUDE LINK TO README</a></p>
@@ -294,7 +294,7 @@ const Content = () => {
           <p>Once every minute, Chimera will query CloudWatch for performance metrics and perform the threshold analysis needed to determine the health of the canary. If this health check fails, the service will immediately roll back to the previous stable version. Otherwise, it will continue until 100% of traffic is shifted to the canary, at which point the deployment will be complete and old infrastructure for the previous version will be removed.</p>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="technicalChallenges" className={sectionDiv}>
         <h2 className={mainHeader}>Techinical Challenges and Design Decisions</h2>
         <h3 className={subHeader}>Design Goals</h3>
         <div className={textDiv}>
@@ -358,7 +358,7 @@ const Content = () => {
           <p>Because of this, we decided that Chimera will not perform comparisons between a baseline or a production deployment. Chimera determines the health of a service by simply comparing metrics to user-defined thresholds.</p>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="futureWork" className={sectionDiv}>
         <h2 className={mainHeader}>Future Work</h2>
         <div className={textDiv}>
           <p>Chimera currently fits well as a part of a CI/CD pipeline for deploying microservices. But, there are some features and improvements we would like to add in the future.</p>
@@ -381,13 +381,13 @@ const Content = () => {
           </figure>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="references" className={sectionDiv}>
         <h2 className={mainHeader}>References</h2>
         <div className={textDiv}>
           <p>paragraph text</p>
         </div>
       </div>
-      <div className={sectionDiv}>
+      <div id="ourTeam" className={sectionDiv}>
         <h2 className={mainHeader}>Our Team</h2>
         <div className={textDiv}>
           <p>paragraph text</p>

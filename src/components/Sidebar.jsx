@@ -5,6 +5,26 @@ const Sidebar = ({ sidebarVisible }) => {
   return (
     <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
       <ul className='font-koulen text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
+        <li><a href='#introduction' className='hover:text-2xl hover:text-bold'>Introduction</a></li>
+        <li><a href='#containerizedMicroservices' className='hover:text-2xl hover:text-bold '>Containerized Microservices</a></li>
+        <li><a href='#deployingMicroservices' className='hover:text-2xl hover:text-bold'>Deploying Microservices</a></li>
+        <li><a href='#existingSolutions' className='hover:text-2xl hover:text-bold '>Existing Solutions</a></li>
+        <li><a href="#introducingChimera" className='hover:text-2xl hover:text-bold '>Introducing Chimera</a></li>
+        <li><a href="#chimerasArchitecture" className='hover:text-2xl hover:text-bold '>Chimera's Architecture</a></li>
+        <li><a href='#usingChimera' className='hover:text-2xl hover:text-bold '>Using Chimera</a></li>
+        <li><a href='#technicalChallenges' className='hover:text-2xl hover:text-bold '>Technical Challenges</a></li>
+        <li><a href='#futureWork' className='hover:text-2xl hover:text-bold '>Future Work</a></li>
+        <li><a href='#references' className='hover:text-2xl hover:text-bold '>References</a></li>
+        <li><a href='#ourTeam' className='hover:text-2xl hover:text-bold '>Our Team</a></li>
+      </ul>
+    </div>
+  )
+}
+
+export default Sidebar
+/*
+    <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
+      <ul className='font-koulen text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
         <li><a href='#Deployments%20In%20Modern%20Systems' className='hover:text-2xl hover:text-bold'>Deployments</a></li>
         <li><a href='#Components%20of%20a%20Canary%20Deployment' className='hover:text-2xl hover:text-bold '>Canary Deployments</a></li>
         <li><a href='#Current%20Solutions' className='hover:text-2xl hover:text-bold'>Current Solutions</a></li>        
@@ -14,10 +34,12 @@ const Sidebar = ({ sidebarVisible }) => {
         <li><a href='#Future%20Work' className='hover:text-2xl hover:text-bold '>Future Work</a></li>      
       </ul>
     </div>
-  )
-}
 
-export default Sidebar
+
+*/
+
+
+
 
 /*
     <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
