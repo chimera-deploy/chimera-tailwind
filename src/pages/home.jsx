@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="flexf flex-col flex-start md:py-12 py-20 bg-greensheen" >
-        <img src={chimeraLogoTitle} alt='banner image' className="mx-auto h-[500px]"></img>
+        <img src={chimeraLogoTitle} alt='banner' className="mx-auto h-[500px]"></img>
       </div>
       <div className="flex flex-col bg-flame h-full py-24 space-y-12">
         <h3 className="font-koulen text-white text-4xl text-center px-12">Chimera is an open-source tool for performing automated canary deployments of containerized microservices</h3>

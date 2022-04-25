@@ -26,7 +26,7 @@ module.exports = {
       goldenrod: '#DEA630'
     },
     fontFamily: {
-      'koulen': ['Koulen'],
+      'koulen': ['Koulen', 'cursive'],
       'sans ': ['Source Sans Pro', 'sans-serif'],
       'mono': ['ui-monospace', 'SFMono-Regular']
     },

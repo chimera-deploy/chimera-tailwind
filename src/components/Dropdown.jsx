@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import octoCat from '../images/Octocat/Octocat.png'
-import tyrianKitty from '../images/github-tyrianpurple-kitty.png'
 
 const Dropdown = ({toggle, dropdownVisible}) => {
   return (
