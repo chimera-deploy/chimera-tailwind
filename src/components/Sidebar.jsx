@@ -1,12 +1,13 @@
 import React from 'react'
 
 const Sidebar = ({ sidebarVisible }) => {
-  const linkFormat = 'hover:text-2xl hover:text-bold hover:text-greensheen'
+  const linkFormatLarge = 'hover:text-2xl hover:text-bold hover:text-greensheen'
+  const linkFormat = 'hover:text-bold hover:text-greensheen'
 
   return (
     <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
       <ul className='font-koulen text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
-        <li><a href='#introduction' className='hover:text-2xl hover:text-bold'>Introduction</a></li>
+        <li><a href='#introduction' className={linkFormat}>Introduction</a></li>
         <li><a href='#containerizedMicroservices' className={linkFormat}>Microservices</a></li>
         <li><a href='#deployingMicroservices' className={linkFormat}>Deploying Microservices</a></li>
         <li><a href='#existingSolutions' className={linkFormat}>Existing Solutions</a></li>

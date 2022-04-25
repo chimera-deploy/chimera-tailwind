@@ -33,11 +33,15 @@ import noBaseline from '../images/diagrams/No-Baseline.png'
 import CICDPipeline from '../images/diagrams/CICD-Pipeline.png'
 import webhook from '../images/diagrams/Webhook.png'
 
+
+
+
 const addSidebarHighlight = (id) => {
   const stringId = id.replaceAll(' ', '%20')
   const sidebarLink = document.querySelector(`ul li a[href="#${stringId}"]`)
   if (sidebarLink) {
-    sidebarLink.classList.add('text-2xl', 'text-bold', 'text-greensheen')
+    // sidebarLink.classList.add('text-2xl', 'text-bold', 'text-greensheen')
+    sidebarLink.classList.add('text-bold', 'text-greensheen')
   }  
 }
 
@@ -45,7 +49,8 @@ const removeSidebarHightlight = (id) => {
   const stringId = id.replaceAll(' ', '%20')
   const sidebarLink = document.querySelector(`ul li a[href="#${stringId}"]`)
   if (sidebarLink) {
-    sidebarLink.classList.remove('text-2xl', 'text-bold', 'text-greensheen')
+    // sidebarLink.classList.remove('text-2xl', 'text-bold', 'text-greensheen')
+    sidebarLink.classList.remove('text-bold', 'text-greensheen')
   }
 }
 
