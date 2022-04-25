@@ -1,6 +1,7 @@
 import React from 'react'
 import caseStudy from '../assets/caseStudy.json'
 import { useEffect } from 'react'
+import TeamMembers from '../components/Team'
 
 import monololithArchitecture from '../images/diagrams/Monolith.png'
 import microserviceArchitecture from '../images/diagrams/Microservice.png'
@@ -462,7 +463,7 @@ const Content = () => {
       <div id="ourTeam" className={sectionDiv}>
         <h2 className={mainHeader}>Our Team</h2>
         <div className={textDiv}>
-          <p>paragraph text</p>
+          <TeamMembers />
         </div>
       </div>
     </>

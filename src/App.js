@@ -49,7 +49,7 @@ function App() {
       <Navbar toggle={toggle}/>
       <Dropdown toggle={toggle} dropdownVisible={dropdownVisible}/>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<CaseStudy sidebarVisible={sidebarVisible}/>} />
         <Route path='/casestudy' element={<CaseStudy sidebarVisible={sidebarVisible}/>} />
         <Route path='/team' element={<Team />} />
       </Routes>

@@ -1,11 +1,8 @@
 import React from 'react'
-import Banner from '../components/Banner'
 import willPhoto from '../images/headshots/will-rossen.jpg'
 import wesPhoto from '../images/headshots/wes-anderson.png'
 import joshPhoto from '../images/headshots/josh-leath.jpg'
 import trevorPhoto from '../images/headshots/trevor-kelly.jpg'
-
-import TeamMembers from '../components/Team'
 
 const Member = ({ photo, github, name, location, email, website, linkedin }) => {
   return (
@@ -33,22 +30,14 @@ const Member = ({ photo, github, name, location, email, website, linkedin }) => 
 const Team = () => {
   return (
     <div>
-      <Banner title='The Team' subtitle='Crushing Canary Deployments Since 2022'/>
-      <TeamMembers />
-      {/* <div className='flex flex-row flex-wrap justify-center font-koulen text-center'>
+      <div className='flex flex-row flex-wrap justify-center font-koulen text-center'>
         <Member photo={willPhoto} github='https://github.com/wor101' name='Will Rossen' location='Boston, MA' email='wor101@gmail.com' website='https://www.willrossen.com' linkedin='https://www.linkedin.com/in/william-rossen-1ab5a320'/>
         <Member photo={trevorPhoto} github='https://github.com/TrevorDKelly' name='Trevor Kelly' location='Pittsburgh, PA' email='trevor.daniel.kelly@gmail.com' website='' linkedin='https://linkedin.com/in/trevor-kelly-2a036770/'/>
         <Member photo={wesPhoto} github='https://github.com/w-h-a' name='Wes Anderson' location='Springfield, MA' email='wesley.herb.anderson@gmail.com' website='' linkedin='https://www.linkedin.com/in/wes-anderson-479087101/'/>
         <Member photo={joshPhoto} github='https://github.com/jleath' name='Josh Leath' location='Columbus, OH' email='joshua.leath@icloud.com' website='' linkedin='https://www.linkedin.com/in/joshua-leath/'/>
-      </div> */}
+      </div>
     </div>
   )
 }
 
 export default Team
-
-
-/*
-      <img src={teamPhoto} alt="The Chimera team hard at work"></img>
-*/
-

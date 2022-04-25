@@ -12,7 +12,7 @@ const CaseStudy = ({ sidebarVisible }) => {
         <img src={chimeraLogoTitle} alt='banner' className="mx-auto h-[500px]"></img>
       </div>
       <Sidebar sidebarVisible={sidebarVisible}/>
-      <Content />
+      <Content />   
     </>
   )
 }
