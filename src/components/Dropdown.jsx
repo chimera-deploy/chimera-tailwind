@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 const Dropdown = ({toggle, dropdownVisible}) => {
   return (
     <nav className={dropdownVisible ? "fixed top-0 left-0 right-0 z-20 flex flex-col items-center bg-white font-koulen text-3xl text-tyrianpurple shadow-2xl" : "hidden"}>
-      <Link to="/" className="p-4 mt-20 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Home</Link>
-      <Link to="/casestudy" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Case Study</Link>
+      {/* <Link to="/" className="p-4 mt-20 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Home</Link> */}
+      <a href="/#home" className="p-4 mt-20 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Home</a>
+      <Link to="/" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Case Study</Link>
       <Link to="/team" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap" onClick={toggle}>Our Team</Link>
       <a href="https://github.com/chimera-deploy/Chimera" target="_blank" className="h-20 hover:bg-flame rounded-lg" onClick={toggle}>
         <svg xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mt-2 stroke-tyrianpurple fill-tyrianpurple hover:stroke-white hover:fill-white" width="64" height="64" x="0" y="0" viewBox="0 0 64 64" >
