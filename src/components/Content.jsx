@@ -92,12 +92,12 @@ const Content = () => {
   // const sectionHeaders = Object.keys(caseStudy)
 
   const sectionDiv = 'md:mr-64 md:ml-80 mx-12'
-  const mainHeader = 'font-koulen text-tyrianpurple text-4xl text-left mt-24 mb-2'
+  const mainHeader = 'font-koulen text-tyrianpurple text-4xl text-left mt-20 mb-2'
   const subHeader = 'font-koulen text-tyrianpurple text-2xl text-left mt-6 mb-2'
-  const textDiv = 'font-sans text-lg space-y-3'
+  const textDiv = 'font-sans text-xl space-y-3'
   const imageCaption = 'italic text-center mb-8'
   const figureFormat = 'flex justify-center'
-  const imageFormat = 'object-contain max-h-128 mt-8'
+  const imageFormat = 'object-contain max-h-140 mt-8'
   const bodyLink = 'text-greensheen'
   const unorderedList = 'list-disc pl-8'
   const orderedList ='list-decimal pl-8'
@@ -105,16 +105,16 @@ const Content = () => {
   return (
     <>
       <div id="introduction" className="flex flex-col bg-flame h-full py-24 space-y-12">
-        <h3 className="mx-12 font-koulen text-white text-4xl text-center px-12">Chimera is an open-source tool for performing automated <span className="text-black"><b>canary deployments</b></span> of <span className="text-black"><b>containerized microservices</b></span>. It allows software development teams to safely and easily deploy new versions of their microservices by taking advantage of the features provided by their existing service mesh.</h3>
+        <h3 className="mx-12 font-koulen text-white text-4xl text-center px-12">An open-source tool for performing automated <span className="text-black"><b>canary deployments</b></span> of <span className="text-black"><b>containerized microservices</b></span>communicating via a <span className="text-black"><b>service mesh</b></span></h3>
       </div>
-      {/* <div id="introduction" className={sectionDiv}>
-        <h2 className={mainHeader}>Introduction</h2>
+      <div id="introduction" className={sectionDiv}>
+        <h2 className={mainHeader}>1. Introduction</h2>
         <div className={textDiv}>
           <p>Chimera is an open-source tool for performing automated <b>canary deployments</b> of <b>containerized microservices</b>. It allows software development teams to safely and easily deploy new versions of their microservices by taking advantage of the features provided by their existing service mesh.</p>
         </div>
-      </div> */}
+      </div>
       <div id="containerizedMicroservices" className={sectionDiv}>
-        <h2 className={mainHeader}>Containerized Microservices</h2>
+        <h2 className={mainHeader}>2. Containerized Microservices</h2>
         <div className={textDiv}>
           <p>Traditionally, software systems were designed using a monolithic architecture. In this architecture, each piece of the system is a part of one large code base which is deployed as a single program. </p>
           <figure className={figureFormat}>
@@ -156,7 +156,7 @@ const Content = () => {
         </div>
       </div>
       <div id="deployingMicroservices" className={sectionDiv}>
-        <h2 className={mainHeader}>Deploying Microservices</h2>
+        <h2 className={mainHeader}>3. Deploying Microservices</h2>
         <div className={textDiv}>
           <p>Designing and writing code is only a part of the process of creating a new version of an application and providing new or improved features for your users. A very important part of the process is delivering the new version and making it available. This is why a robust Continuous Integration and Continuous Delivery (CI/CD) pipeline is essential. When a CI/CD pipeline is performing correctly, teams can iterate incrementally and rapidly. Modern software teams commonly deploy new versions of their code several times a day. In order to achieve this, the steps of the deployment process must be automated, reliable, and have minimal impact on the application’s users.</p>
           <p>A typical CI/CD pipeline will include automated steps for building and testing new code as it is pushed into a code repository. This process ensures that at any given point, all code in a repository has been tested and meets whatever standards have been established. Once this has been done, the goal is to make the new version available to users as soon as possible. This kind of fast iteration allows teams to “fail fast”, which in turn allows the team to identify any problems as soon as possible. This goal needs to be balanced with the goal of providing the best possible customer experience and careful thought needs to be put into how the deployment process can achieve both goals.</p>
@@ -215,7 +215,7 @@ const Content = () => {
         </div>
       </div>
       <div id="existingSolutions" className={sectionDiv}>
-        <h2 className={mainHeader}>Existing Solutions</h2>
+        <h2 className={mainHeader}>4. Existing Solutions</h2>
         <div className={textDiv}>
           <p>Because canary deployments are complex and require an extended timeframe to complete, the process can greatly benefit from automation. This is especially true if the canary deployment is part of a CI/CD process that is intended to deploy as frequently as possible. There are several distinct categories of existing solutions for automating canary deployments of containerized microservices.</p>
         </div>
@@ -236,7 +236,7 @@ const Content = () => {
         </div>
       </div>
       <div id="introducingChimera" className={sectionDiv}>
-        <h2 className={mainHeader}>Introducing Chimera</h2>
+        <h2 className={mainHeader}>5. Introducing Chimera</h2>
         <div className={textDiv}>
           <p>In the landscape of existing automated canary deployment tools, what is missing is an easy-to-use, open source tool for those outside of the Kubernetes ecosystem.</p>
           <figure className={figureFormat}>
@@ -250,7 +250,7 @@ const Content = () => {
         </div>
       </div>
       <div id="chimerasArchitecture" className={sectionDiv}>
-        <h2 className={mainHeader}>Chimera's Architecture</h2>
+        <h2 className={mainHeader}>6. Chimera's Architecture</h2>
         <div className={textDiv}>
           <p>To begin the exploration into how Chimera delivers on these design goals and performs canary deployments, we must consider the various infrastructure components that make the canary deployment possible.</p>
         </div>
@@ -334,7 +334,7 @@ const Content = () => {
         </div>
       </div>
       <div id="usingChimera" className={sectionDiv}>
-        <h2 className={mainHeader}>Using Chimera</h2>
+        <h2 className={mainHeader}>7. Using Chimera</h2>
         <div className={textDiv}>
           <p><a className={bodyLink} href="/README">INCLUDE LINK TO README</a></p>
           <p>Chimera is made available as a containerized web application with a React front end user interface, and an express app backend that handles managing AWS resources. To begin using Chimera, the user just needs to provide AWS credential information in a configuration file and use docker-compose to start the application, where they will be asked for some basic information about their infrastructure.</p>
@@ -361,7 +361,7 @@ const Content = () => {
         </div>
       </div>
       <div id="technicalChallenges" className={sectionDiv}>
-        <h2 className={mainHeader}>Techinical Challenges and Design Decisions</h2>
+        <h2 className={mainHeader}>8. Techinical Challenges and Design Decisions</h2>
         <h3 className={subHeader}>Design Goals</h3>
         <div className={textDiv}>
           <p>While designing Chimera, we had to make many design decisions that would impact the final product. While making these decisions, we kept a small set of design goals in mind.</p>
@@ -433,7 +433,7 @@ const Content = () => {
         </div>
       </div>
       <div id="futureWork" className={sectionDiv}>
-        <h2 className={mainHeader}>Future Work</h2>
+        <h2 className={mainHeader}>9. Future Work</h2>
         <div className={textDiv}>
           <p>Chimera currently fits well as a part of a CI/CD pipeline for deploying microservices. But, there are some features and improvements we would like to add in the future.</p>
         </div>
@@ -460,13 +460,15 @@ const Content = () => {
         </div>
       </div>
       <div id="references" className={sectionDiv}>
-        <h2 className={mainHeader}>References</h2>
+        <h2 className={mainHeader}>10. References</h2>
         <div className={textDiv}>
           <p>paragraph text</p>
         </div>
       </div>
+      
       <div id="ourTeam" className={sectionDiv}>
-        <h2 className={mainHeader}>Our Team</h2>
+        <div className="mt-24 h-px bg-gray"></div>
+        <h2 className='font-koulen text-tyrianpurple text-4xl text-center mt-24 mb-2'>The Team Behind Chimera</h2>
         <div className={textDiv}>
           <TeamMembers />
         </div>

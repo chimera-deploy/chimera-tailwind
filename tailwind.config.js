@@ -15,6 +15,8 @@ module.exports = {
       }),
       spacing: {
         '128': '32rem',
+        '140': '40rem',
+        '152': '52rem'
       }
     },
     colors: {
@@ -26,7 +28,8 @@ module.exports = {
       tyrianpurple: '#69163E',
       sinopia: '#CB4A25',
       flame: '#D16535',
-      goldenrod: '#DEA630'
+      goldenrod: '#DEA630',
+      gray: '#cbd5e1'
     },
     fontFamily: {
       'koulen': ['Koulen', 'cursive'],
