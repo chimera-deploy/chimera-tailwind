@@ -92,12 +92,12 @@ const Content = () => {
   // const sectionHeaders = Object.keys(caseStudy)
 
   const sectionDiv = 'md:mr-64 md:ml-80 mx-12'
-  const mainHeader = 'font-koulen text-tyrianpurple text-4xl text-left mt-24 mb-2'
+  const mainHeader = 'font-koulen text-tyrianpurple text-4xl text-left mt-20 mb-2'
   const subHeader = 'font-koulen text-tyrianpurple text-2xl text-left mt-6 mb-2'
   const textDiv = 'font-sans text-xl space-y-3'
   const imageCaption = 'italic text-center mb-8'
   const figureFormat = 'flex justify-center'
-  const imageFormat = 'object-contain max-h-128 mt-8'
+  const imageFormat = 'object-contain max-h-140 mt-8'
   const bodyLink = 'text-greensheen'
   const unorderedList = 'list-disc pl-8'
   const orderedList ='list-decimal pl-8'
@@ -465,7 +465,9 @@ const Content = () => {
           <p>paragraph text</p>
         </div>
       </div>
+      
       <div id="ourTeam" className={sectionDiv}>
+        <div className="mt-24 h-px bg-gray"></div>
         <h2 className='font-koulen text-tyrianpurple text-4xl text-center mt-24 mb-2'>The Team Behind Chimera</h2>
         <div className={textDiv}>
           <TeamMembers />
