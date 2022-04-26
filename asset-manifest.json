@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.db1d71e3.css",
-    "main.js": "/static/js/main.ea06ab47.js",
+    "main.css": "/static/css/main.00b1e480.css",
+    "main.js": "/static/js/main.540fd1ed.js",
     "static/media/Existing-Solutions.png": "/static/media/Existing-Solutions.6af7a0e05cbb38f59c7a.png",
     "static/media/begin-deployment.gif": "/static/media/begin-deployment.428d3f80c7228fadc579.gif",
     "static/media/wes-anderson.png": "/static/media/wes-anderson.51b580ae8f8219bf87b1.png",
@@ -23,6 +23,7 @@
     "static/media/Many-Cloud-Watch-Agents.png": "/static/media/Many-Cloud-Watch-Agents.52d1cc56e04ce44736ef.png",
     "static/media/Microservice.png": "/static/media/Microservice.aa05b88564a949711fc7.png",
     "static/media/cicd.png": "/static/media/cicd.d3d76d9a0330cdc55279.png",
+    "static/media/Service-Mesh-Percentage.png": "/static/media/Service-Mesh-Percentage.2eed6b1934e1e3c1e387.png",
     "static/media/Container-Orchestrator.png": "/static/media/Container-Orchestrator.097ab01db74fdc951e13.png",
     "static/media/color-logo-title.png": "/static/media/color-logo-title.0fb9079fdc1c5c5fcdd4.png",
     "static/media/Service-Mesh.png": "/static/media/Service-Mesh.7ab66ece58f6e85b4283.png",
@@ -38,11 +39,11 @@
     "static/media/trevor-kelly.jpg": "/static/media/trevor-kelly.91980139e4e554b1f034.jpg",
     "static/media/All-At-Once-Deployment.gif": "/static/media/All-At-Once-Deployment.1618d7f2667b4e868882.gif",
     "index.html": "/index.html",
-    "main.db1d71e3.css.map": "/static/css/main.db1d71e3.css.map",
-    "main.ea06ab47.js.map": "/static/js/main.ea06ab47.js.map"
+    "main.00b1e480.css.map": "/static/css/main.00b1e480.css.map",
+    "main.540fd1ed.js.map": "/static/js/main.540fd1ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.db1d71e3.css",
-    "static/js/main.ea06ab47.js"
+    "static/css/main.00b1e480.css",
+    "static/js/main.540fd1ed.js"
   ]
 }
