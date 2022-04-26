@@ -7,6 +7,7 @@ import monololithArchitecture from '../images/diagrams/Monolith.png'
 import microserviceArchitecture from '../images/diagrams/Microservice.png'
 import containerOrchestrator from '../images/diagrams/Container-Orchestrator.png'
 import serviceMesh from '../images/diagrams/Service-Mesh.png'
+import serviceMeshPercentage from '../images/diagrams/Service-Mesh-Percentage.png'
 import cicdPipeline from '../images/diagrams/cicd.png'
 import allAtOnceDeployment from '../images/diagrams/All-At-Once-Deployment.gif'
 import rollingDeployment from '../images/diagrams/Rolling-Deployment.gif'
@@ -54,20 +55,20 @@ const removeSidebarHightlight = (id) => {
   }
 }
 
-// const Figure = (figureData) => {
-//   const figureFormat = 'flex justify-center max-h-96'
-//   const captionFormat = 'italic text-center'
-//   const imageFormat = 'object-contain max-h-96'
+const Diagram = ({ source, alt, caption}) => {
+  const captionFormat = 'italic text-center mb-8'
+  const figureFormat = 'flex justify-center'
+  const imageFormat = 'object-contain max-h-140 mt-8'
 
-//   return (
-//     <figure className={figureFormat}>
-//       <div>
-//         <img className={imageFormat} src={figureData.pic} alt={figureData.alt}></img>
-//         <figcaption className={captionFormat}>{figureData.caption}</figcaption>
-//       </div>
-//     </figure>
-//   )
-// }
+  return (
+    <figure className={figureFormat}>
+      <div>
+        <img className={imageFormat} src={source} alt={alt}></img>
+        <figcaption className={captionFormat}>{caption}</figcaption>
+      </div>
+    </figure>
+  )
+}
 
 const Content = () => {
   useEffect(()=> {
@@ -117,42 +118,17 @@ const Content = () => {
         <h2 className={mainHeader}>2. Containerized Microservices</h2>
         <div className={textDiv}>
           <p>Traditionally, software systems were designed using a monolithic architecture. In this architecture, each piece of the system is a part of one large code base which is deployed as a single program. </p>
-          <figure className={figureFormat}>
-            <div>
-              <img className={imageFormat} src={monololithArchitecture} alt="monolith architecture"></img>
-              <figcaption className={imageCaption}>Monolithic Architecture</figcaption>
-            </div>
-          </figure>
+          <Diagram source={monololithArchitecture} alt="monolith architecture" caption="Monolithic Architectcure" />
           <p>Modern software systems often use a <b>microservice</b> architecture, in which individual parts of a system have been split up into independent applications and are referred to as <b>services</b>. Unlike a monolithic architecture, the individual services in a microservice architecture are loosely coupled and can be independently tested, deployed, and scaled. Microservices can use different technology stacks and can be maintained by smaller, autonomous teams.</p>
-          <figure className={figureFormat}>
-            <div>
-              <img className={imageFormat} src={microserviceArchitecture} alt="microservice architecture"></img>
-              <figcaption className={imageCaption}>Microservice Architecture</figcaption>
-            </div>
-          </figure>
+          <Diagram source={microserviceArchitecture} alt="microservice architecture" caption="Microservice Architecture" />
           <p>A microservice architecture comes with its own unique set of challenges. For example, each microservice should be able to scale independently. Each microservice may consist of multiple instances of the same application which can be added or removed in response to fluctuating traffic demands. This scaling introduces other concerns, such as load balancing and the provisioning of new resources.</p>
           <p>A common solution to these challenges is known as <b>container orchestration</b>. Applications can be packaged as container images using a tool like Docker, and a container orchestration tool can handle, among other features, provisioning resources to run the application, scaling as needed, and performing load balancing to ensure that no single instance of the application is overwhelmed. There are many container orchestration tools such as <em>Kubernetes</em>, <em>Docker Swarm</em>, and <em>AWS Elastic Container Service</em>.</p>
-          <figure className={figureFormat}>
-            <div>
-              <img className={imageFormat} src={containerOrchestrator} alt="container orchestration"></img>
-              <figcaption className={imageCaption}>Container Orchestration</figcaption>
-            </div>
-          </figure>
+          <Diagram source={containerOrchestrator} alt="container orchestration" caption="Container Orchestration" />
           <p>In a monolithic architecture, individual components of a system communicate via method or function calls. Microservices, on the other hand, must communicate via networking protocols such as HTTP or AMQP. As a microservice architecture grows, it can include many services and the communications between them can become very complex. Each service must have the logic that controls these communications built into it, including how it can interact with the other services and what should happen if another service fails to respond. As a system grows and changes, each service must independently keep up with how this communication logic changes.</p>
           <p>One possible solution to this problem is to include an additional layer to the infrastructure known as a <b>service mesh</b>. When using a service mesh, each microservice is associated with a <em>sidecar proxy</em> which intercepts requests to and from the service. These proxies are referred to as the <em>data plane</em> of the service mesh and handle the complexities of inter-service communication. The developer can control and configure these proxies via the <em>control plane</em> of the service mesh. Common examples of service mesh products include <em>Istio</em>, <em>Linkerd</em>, and <em>AWS App Mesh</em>.</p>
-          <figure className={figureFormat}>
-            <div>
-              <img className={imageFormat} src={serviceMesh} alt="service mesh"></img>
-              <figcaption className={imageCaption}>Service Mesh</figcaption>
-            </div>
-          </figure>
+          <Diagram source={serviceMesh} alt="service mesh" caption="Service Mesh" />
           <p>Because all interaction between services flows through the data-plane of the service mesh, it can capture traces and data about the inter-service communication. This improves observability into how the system is performing. Additionally, service meshes provide an abstraction known as a <em>virtual service</em>, which provides the ability to configure how requests are routed to a service within the mesh.</p>
-          <figure className={figureFormat}>
-            <div>
-              <img className={imageFormat} src={serviceMesh} alt="percentage based traffic routing between services"></img>
-              <figcaption className={imageCaption}>Percentage Based Traffic Routing Between Services</figcaption>
-            </div>
-          </figure>
+          <Diagram source={serviceMeshPercentage} alt="percentage based traffic routing between services" caption="Percentage Based Traffic Routing Between Services" />
         </div>
       </div>
       <div id="deployingMicroservices" className={sectionDiv}>
