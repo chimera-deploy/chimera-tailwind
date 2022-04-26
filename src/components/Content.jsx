@@ -105,7 +105,7 @@ const Content = () => {
   return (
     <>
       <div id="introduction" className="flex flex-col bg-flame h-full py-24 space-y-12">
-        <h3 className="mx-12 font-koulen text-white text-4xl text-center px-12">An open-source tool for performing automated <span className="text-black"><b>canary deployments</b></span> of <span className="text-black"><b>containerized microservices</b></span>communicating via a <span className="text-black"><b>service mesh</b></span></h3>
+        <h3 className="mx-12 font-koulen text-white text-4xl text-center px-12">An open-source tool for performing automated <span className="text-black"><b>canary deployments</b></span> of <span className="text-black"><b>containerized microservices</b></span> communicating via a <span className="text-black"><b>service mesh</b></span></h3>
       </div>
       <div id="introduction" className={sectionDiv}>
         <h2 className={mainHeader}>1. Introduction</h2>
