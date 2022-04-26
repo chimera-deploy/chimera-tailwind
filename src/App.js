@@ -7,6 +7,7 @@ import Dropdown from './components/Dropdown';
 import CaseStudy from './pages/caseStudy';
 import Home from './pages/home';
 import Team from './pages/team';
+import Presentation from './pages/presentation';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Dropdown toggle={toggle} dropdownVisible={dropdownVisible}/>
       <Routes>
         <Route path='/' element={<CaseStudy sidebarVisible={sidebarVisible}/>} />
+        <Route path='/presentation' element={<Presentation />} />
         <Route path='/casestudy' element={<CaseStudy sidebarVisible={sidebarVisible}/>} />
         <Route path='/team' element={<Team />} />
       </Routes>

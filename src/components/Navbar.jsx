@@ -13,6 +13,7 @@ const Navbar = ({toggle}) => {
       <nav className="grow h-20 md:flex hidden justify-end place-items-center px-8 font-koulen text-3xl text-tyrianpurple">
         {/* <Link to="/" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap ">Home</Link> */}
         <Link to="/" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Case Study</Link>
+        <Link to="/presentation" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Presentation</Link>
         <Link to="/team" className="p-4 hover:bg-flame hover:text-white rounded-lg whitespace-nowrap">Our Team</Link>
         <a href="https://github.com/chimera-deploy/Chimera" target="_blank" rel="noopener noreferrer" className="hover:bg-flame rounded-xl">
           <svg xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 stroke-tyrianpurple fill-tyrianpurple hover:stroke-white hover:fill-white" width="64" height="64" x="0" y="0" viewBox="0 0 64 64" >

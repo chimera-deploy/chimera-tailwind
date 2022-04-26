@@ -5,7 +5,7 @@ const Sidebar = ({ sidebarVisible }) => {
   const linkFormat = 'hover:text-bold hover:text-greensheen'
 
   return (
-    <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
+    <div className={sidebarVisible ? 'md:block hidden fixed top-0 left-0 h-screen pt-12 pr-6 shadow' : 'hidden'}>
       <ul className='font-koulen text-right text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
         <li><a href='#introduction' className={linkFormat}>1. Introduction</a></li>
         <li><a href='#containerizedMicroservices' className={linkFormat}>2. Microservices</a></li>
@@ -17,7 +17,6 @@ const Sidebar = ({ sidebarVisible }) => {
         <li><a href='#technicalChallenges' className={linkFormat}>8. Technical Challenges</a></li>
         <li><a href='#futureWork' className={linkFormat}>9. Future Work</a></li>
         <li><a href='#references' className={linkFormat}>10. References</a></li>
-        <li><a href='#ourTeam' className={linkFormat}>11. Our Team</a></li>
       </ul>
     </div>
   )

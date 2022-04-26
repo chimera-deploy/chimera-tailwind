@@ -466,7 +466,7 @@ const Content = () => {
         </div>
       </div>
       <div id="ourTeam" className={sectionDiv}>
-        <h2 className={mainHeader}>11. Our Team</h2>
+        <h2 className='font-koulen text-tyrianpurple text-4xl text-center mt-24 mb-2'>The Team Behind Chimera</h2>
         <div className={textDiv}>
           <TeamMembers />
         </div>
