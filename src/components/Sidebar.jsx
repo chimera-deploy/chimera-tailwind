@@ -7,17 +7,17 @@ const Sidebar = ({ sidebarVisible }) => {
   return (
     <div className={sidebarVisible ? 'md:block hidden fixed top-24 left-0' : 'hidden'}>
       <ul className='font-koulen text-right text-tyrianpurple text-xl px-4 animate-fade space-y-2' >
-        <li><a href='#introduction' className={linkFormat}>Introduction</a></li>
-        <li><a href='#containerizedMicroservices' className={linkFormat}>Microservices</a></li>
-        <li><a href='#deployingMicroservices' className={linkFormat}>Deploying Microservices</a></li>
-        <li><a href='#existingSolutions' className={linkFormat}>Existing Solutions</a></li>
-        <li><a href="#introducingChimera" className={linkFormat}>Introducing Chimera</a></li>
-        <li><a href="#chimerasArchitecture" className={linkFormat}>Chimera's Architecture</a></li>
-        <li><a href='#usingChimera' className={linkFormat}>Using Chimera</a></li>
-        <li><a href='#technicalChallenges' className={linkFormat}>Technical Challenges</a></li>
-        <li><a href='#futureWork' className={linkFormat}>Future Work</a></li>
-        <li><a href='#references' className={linkFormat}>References</a></li>
-        <li><a href='#ourTeam' className={linkFormat}>Our Team</a></li>
+        <li><a href='#introduction' className={linkFormat}>1. Introduction</a></li>
+        <li><a href='#containerizedMicroservices' className={linkFormat}>2. Microservices</a></li>
+        <li><a href='#deployingMicroservices' className={linkFormat}>3. Deploying Microservices</a></li>
+        <li><a href='#existingSolutions' className={linkFormat}>4. Existing Solutions</a></li>
+        <li><a href="#introducingChimera" className={linkFormat}>5. Introducing Chimera</a></li>
+        <li><a href="#chimerasArchitecture" className={linkFormat}>6. Chimera's Architecture</a></li>
+        <li><a href='#usingChimera' className={linkFormat}>7. Using Chimera</a></li>
+        <li><a href='#technicalChallenges' className={linkFormat}>8. Technical Challenges</a></li>
+        <li><a href='#futureWork' className={linkFormat}>9. Future Work</a></li>
+        <li><a href='#references' className={linkFormat}>10. References</a></li>
+        <li><a href='#ourTeam' className={linkFormat}>11. Our Team</a></li>
       </ul>
     </div>
   )
